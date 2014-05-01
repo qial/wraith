@@ -52,6 +52,8 @@ class Wraith::CropImages
           height = 0
         end
       end
+    else
+      height = 0
     end
   end
 end
