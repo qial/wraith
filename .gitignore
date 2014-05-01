@@ -3,3 +3,7 @@ shots/
 data.txt
 .DS_Store
 *.swp
+shots*/
+spider.txt
+Gemfile.lock
+

@@ -36,17 +36,19 @@ class Wraith::CLI < Thor
     create.create_folders
   end
 
-  no_commands do
+#  no_commands do
+    desc "check_for_paths [config_name]", "build a spider.txt if needed"
     def check_for_paths(config_name)
       spider = Wraith::Spidering.new(config_name)
       spider.check_for_paths
     end
 
+    desc "check_images [config_name]", "check images"
     def check_images(config_name)
       image = Wraith::Images.new(config_name)
       image.files
     end
-  end
+#  end
 
   desc "save_images [config_name]", "captures screenshots"
   def save_images(config_name)
