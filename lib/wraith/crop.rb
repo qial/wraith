@@ -28,7 +28,7 @@ class Wraith::CropImages
     files = Dir.glob("#{wraith.directory}/*/*.png").sort
     until files.empty?
       @base, @compare = files.slice!(0, 2)
-      puts 'cropping images'
+      puts "cropping images #{@base} #{@compare}"
       Wraith::Wraith.crop_images(crop, height)
     end
   end
