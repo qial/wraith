@@ -29,7 +29,9 @@ class Wraith::CropImages
     until files.empty?
       @base, @compare = files.slice!(0, 2)
       puts "cropping images #{@base} #{@compare}"
-      Wraith::Wraith.crop_images(crop, height)
+      unless @base.nil? || @compare.nil?
+          Wraith::Wraith.crop_images(crop, height)
+      end
     end
   end
 
