@@ -26,8 +26,21 @@ class Wraith::CropImages
 
   def crop_images
     files = Dir.glob("#{wraith.directory}/*/*.png").sort
+    files.delete(nil)
     until files.empty?
-      @base, @compare = files.slice!(0, 2)
+      @base, @compare = files.slice(0, 2)
+      /(?<num1>[0-9]+)/ =~ @base
+      /(?<num2>[0-9]+)/ =~ @compare
+      if num1 != num2
+        # skip the number that doesn't match
+        files.delete_at(0)
+        puts "skipping image with no match #{@base}"
+        next
+      else
+        # we keep the two
+        files.delete_at(0)
+        files.delete_at(0)
+      end
       puts "cropping images #{@base} #{@compare}"
       unless @base.nil? || @compare.nil?
           Wraith::Wraith.crop_images(crop, height)
