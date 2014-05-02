@@ -15,6 +15,7 @@ domains:
 #  english: "http://www.live.bbc.co.uk/news"
 #  russian: "http://www.live.bbc.co.uk/russian"
   before: "http://www.vw.com"
+  after: "http://www.vw.com"
 #  spanish: "http://www.vw.com"
 #  vwcars: "http://www.vw.com/models"
 
