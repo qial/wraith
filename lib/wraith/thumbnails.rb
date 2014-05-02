@@ -19,4 +19,5 @@ class Wraith::Thumbnails
     puts 'Generating thumbnails'
   end
 end
+
 
