@@ -1,7 +1,7 @@
 #Headless browser option
 browser:
-  # webkit: "phantomjs"
-   gecko: "slimerjs"
+   webkit: "phantomjs"
+  # gecko: "\"xvfb-run\" slimerjs"
 
 #If you want to have multiple snapping files, set the file name here
 snap_file: "javascript/snap.js"
@@ -90,55 +90,6 @@ paths:
  - /faq/
  - /vw-sponsorship/
  - /site-map/
- - /es/
- - /es/models/
- - /es/models/golf/
- - /es/models/gti/
- - /es/models/beetle/
- - /es/models/beetle-convertible/
- - /es/models/eos/
- - /es/models/jetta/
- - /es/models/cc/
- - /es/models/passat/
- - /es/models/jetta-sportwagen/
- - /es/models/tiguan/
- - /es/models/touareg/
- - /es/features/
- - /es/features/clean-diesel/
- - /es/features/hybrid/
- - /es/features/premium-audio/
- - /es/features/panoramic-sunroof/
- - /es/features/vw-car-net/
- - /es/features/performance/
- - /es/terms/
- - /es/privacy/
- - /es/find-match/
- - /es/find-match/models/
- - /es/find-match/engine/
- - /es/find-match/colors/
- - /es/find-match/features/
- - /es/find-match/budget/
- - /es/find-match/new-cars/
- - /es/find-match/used-cars/
- - /es/find-a-dealer/
- - /es/profile/
- - /es/special-offers/
- - /es/financial-services/
- - /es/financial-services/vehicle-protection/
- - /es/financial-services/ownership-experience/
- - /es/financial-services/glossary/
- - /es/financial-services/contact-us/
- - /es/financial-services/lease-a-vehicle/
- - /es/financial-services/finance-a-vehicle/
- - /es/owners/
- - /es/web/vw/recall/index.html
- - /es/certified-pre-owned/
- - /es/social-news/
- - /es/corporate/
- - /es/contact/
- - /es/faq/
- - /es/vw-sponsorship/
- - /es/site-map/
 
 #Amount of fuzz ImageMagick will use
 fuzz: '20%'
