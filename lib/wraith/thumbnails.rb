@@ -20,4 +20,4 @@ class Wraith::Thumbnails
   end
 end
 
-
+
