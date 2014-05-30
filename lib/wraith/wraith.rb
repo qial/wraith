@@ -60,7 +60,7 @@ class Wraith::Wraith
   end
 
   def capture_page_image(browser, url, width, file_name)
-    puts `#{browser} #{@config['phantomjs_options']} "#{snap_file}" "#{url}" "#{width}" "#{file_name}"`
+    puts `"#{browser}" #{@config['phantomjs_options']} "#{snap_file}" "#{url}" "#{width}" "#{file_name}"`
   end
 
   def self.crop_images(crop, height)
